@@ -8,6 +8,10 @@ function Test(){
   return <h1>Hello this is a test!</h1>
 }
 
+function NotaTest(){
+  return <h1>Hello this is NOT a test!</h1>
+}
+
 //Prop testing
 function TestProps(props){
   return <input></input>
