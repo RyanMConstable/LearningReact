@@ -27,7 +27,7 @@ function TestProps(props){
 }
 /////////////////////////////////////////////////////////////////
 //Testing list development
-function car(props){
+function Car(props){
   return <li>A {props.brand}</li>
 }
 
@@ -36,7 +36,7 @@ function Garage(){
   return (
     <>
       <h1>What cars are in my garage?</h1>
-      <ul></ul>
+      <ul>{cars.map((car) => <Car brand={car}/>)}</ul>
     </>
   )
 }
