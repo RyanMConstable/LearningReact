@@ -4,6 +4,15 @@ import Button from './Button.js';
 
 //const myFirstElement = <h1>Hello React!</h1>
 
+function TestorNot(props){
+  const isTest = props.isTest
+  if (isTest){
+    return <Test/>
+  } else {
+    return <NotaTest/>
+  }
+}
+
 function Test(){
   return <h1>Hello this is a test!</h1>
 }
@@ -24,7 +33,7 @@ function Main() {
   return (
     <>
       <TestProps color='red'/>
-      <Test/>
+      <TestorNot isTest={true}/>
       <Button text="Button time!" alertInfo="The button works!"/>
     </>
   );
