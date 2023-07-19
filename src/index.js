@@ -1,17 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Button from './Button.js';
+
+//const myFirstElement = <h1>Hello React!</h1>
+
+function Test(){
+  return <h1>Hello this is a test!</h1>
+}
+
+//Prop testing
+function TestProps(props){
+  return <input></input>
+}
+
+
+
+
+function Main() {
+  return (
+    <>
+      <TestProps color='red'/>
+      <Test/>
+      <Button text="Button time!" alertInfo="The button works!"/>
+    </>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+root.render(<Main/>);
