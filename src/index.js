@@ -48,6 +48,7 @@ function Main() {
       <TestorNot isTest={false}/>
       <TestorNot isTest={true}/>
       <Button text="Button time!" alertInfo="The button works!"/>
+      <Garage/>
     </>
   );
 }
