@@ -6,11 +6,9 @@ import Button from './Button.js';
 
 function TestorNot(props){
   const isTest = props.isTest
-  if (isTest){
-    return <Test/>
-  } else {
-    return <NotaTest/>
-  }
+  return (
+    isTest ? <Test/> : <NotaTest/>
+  )
 }
 
 function Test(){
@@ -33,6 +31,7 @@ function Main() {
   return (
     <>
       <TestProps color='red'/>
+      <TestorNot isTest={false}/>
       <TestorNot isTest={true}/>
       <Button text="Button time!" alertInfo="The button works!"/>
     </>
