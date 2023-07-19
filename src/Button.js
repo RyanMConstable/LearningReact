@@ -3,7 +3,12 @@ function Button(props){
         alert(a);
     }
 
-    return <button onClick = {() => test("What happens now?")}>{props.text}</button>;
+    return (
+        <>
+            <button onClick = {() => test("What happens now?")}>{props.text}</button>
+            <button onClick = {() => test("Test!")}>{props.text}</button>
+        </>
+    );
 }
 
 export default Button;
