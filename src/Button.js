@@ -6,7 +6,7 @@ function Button(props){
     return (
         <>
             <button onClick = {() => test("What happens now?")}>{props.text}</button>
-            <button onClick = {() => test("Test!")}>{props.text}</button>
+            <button onClick = {(event) => test(event)}>{props.text}</button>
         </>
     );
 }
