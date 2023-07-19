@@ -21,11 +21,25 @@ function NotaTest(){
   return <h1>Hello this is NOT a test!</h1>
 }
 /////////////////////////////////////////////////////////////////////////////
-
+//Input bar
 function TestProps(props){
   return <input></input>
 }
+/////////////////////////////////////////////////////////////////
+//Testing list development
+function car(props){
+  return <li>A {props.brand}</li>
+}
 
+function Garage(){
+  const cars = ["Ford", "BMW", "Audi"]
+  return (
+    <>
+      <h1>What cars are in my garage?</h1>
+      <ul></ul>
+    </>
+  )
+}
 
 function Main() {
   return (
