@@ -4,6 +4,8 @@ import Button from './Button.js';
 
 //const myFirstElement = <h1>Hello React!</h1>
 
+
+//The functions until the next comment are to test ternary operators
 function TestorNot(props){
   const isTest = props.isTest
   return (
@@ -18,8 +20,11 @@ function Test(){
 function NotaTest(){
   return <h1>Hello this is NOT a test!</h1>
 }
+/////////////////////////////////////////////////////////////////////////////
 
-
+function TestProps(props){
+  return <input></input>
+}
 
 
 function Main() {
