@@ -5,6 +5,7 @@ import Button from './Button.js';
 import TestorNot from './Conditional.js'
 import TestProps from './Input.js'
 import Garage from './Lists.js';
+import MyForm from './Form.js';
 
 
 
@@ -18,6 +19,7 @@ function Main() {
       <TestorNot isTest={true}/>
       <Button text="Button time!" alertInfo="The button works!"/>
       <Garage/>
+      <MyForm/>
     </>
   );
 }
