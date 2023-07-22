@@ -1,25 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Button from './Button.js';
+import TestorNot from './Conditional.js'
 
 //const myFirstElement = <h1>Hello React!</h1>
 
 
-//The functions until the next comment are to test ternary operators
-function TestorNot(props){
-  const isTest = props.isTest
-  return (
-    isTest ? <Test/> : <NotaTest/>
-  )
-}
-
-function Test(){
-  return <h1>Hello this is a test!</h1>
-}
-
-function NotaTest(){
-  return <h1>Hello this is NOT a test!</h1>
-}
 /////////////////////////////////////////////////////////////////////////////
 //Input bar
 function TestProps(props){
