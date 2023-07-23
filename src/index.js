@@ -7,6 +7,7 @@ import TestProps from './Input.js'
 import Garage from './Lists.js';
 import MyForm from './Form.js';
 import TestingTextArea from './TextArea.js';
+import Dropdown from './Dropdown.js';
 
 
 
@@ -22,6 +23,7 @@ function Main() {
       <Garage/>
       <MyForm/>
       <TestingTextArea/>
+      <Dropdown/>
     </>
   );
 }
